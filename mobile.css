@@ -1,0 +1,31 @@
+@media only screen and (max-width: 699px) {}
+
+/* ipad portrait*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait),
+(max-width : 1023px) and (min-width : 700px) {
+    .content {
+        max-width: calc(100% - 1.2em);
+        min-width: 748px;
+    }
+}
+
+/* ipad landscape */
+@media only screen and (min-width : 768px) and (max-width : 1199px) and (orientation : landscape) {
+    .content {
+        max-width: calc(100% - 1.2em);
+        min-width: 740px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1579px) {
+    .content {
+        max-width: 90%;
+        min-width: 1150px;
+    }
+}
+
+@media only screen and (min-width: 1580px) {
+    .content {
+        max-width: 1540px;
+    }
+}
