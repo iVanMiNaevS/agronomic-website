@@ -9,11 +9,12 @@
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 		/>
 		<title>%title%</title>
-		<link rel="stylesheet" href="/gallery.css" />
-		<link rel="stylesheet" type="text/css" href="/main.css" />
-		<link rel="stylesheet" type="text/css" href="/mobile.css" />
-		<script src="/plugins/jquery.min.js"></script>
-		<link
+		<link rel="stylesheet" type="text/css" href="gallery.css" />
+		<link rel="stylesheet" type="text/css" href="../main.css" />
+		<link rel="stylesheet" type="text/css" href="../mobile.css" />
+		<link rel="stylesheet" href="../myContainer.css" />
+		<!-- <script src="/plugins/jquery.min.js"></script> -->
+		<!-- <link
 			rel="stylesheet"
 			href="/plugins/fancybox_3/jquery.fancybox.min.css?refresh21082017"
 			type="text/css"
@@ -22,16 +23,13 @@
 		<script
 			type="text/javascript"
 			src="/plugins/fancybox_3/jquery.fancybox.min.js?refresh21082017"
-		></script>
-		<script
+		></script> -->
+		<!-- <script
 			type="text/javascript"
 			src="/plugins/jquery.maskedinput.js"
-		></script>
-		<script src="/base.js"></script>
-		<script src="/main.js"></script>
-
-		<link rel="stylesheet" href="/plugins/swiper/swiper.min.css" />
-		<script src="/plugins/swiper/swiper.min.js"></script>
+		></script> -->
+		<!-- <script src="/base.js"></script>
+		<script src="/main.js"></script> -->
 	</head>
 	<body>
 		<div id="global100">
@@ -39,20 +37,13 @@
 
 			<div class="main-content">
 				<div class="screen">
-					<div class="content">
-						<div class="bread-crumbs">
-							<a href="">Главная страница</a
-							><span class="bread-crumbs__slash"> / </span
-							><a href="">Фотогалерея</a
-							><span class="bread-crumbs__slash"> / </span
-							><a href="" class="bread-crumbs__active">Галерея</a>
-						</div>
+					<div class="content myConteiner20padingMob">
 						<h2>Фотогалерея</h2>
-						<div class="gallery__cards">
-							<div class="gallery__card">
+						<section class="gallery__cards">
+							<article class="gallery__card">
 								<div class="card__content">
 									<div class="card__info">
-										<p class="card__title">Наши теплицы</p>
+										<h4 class="card__title">Наши теплицы</h4>
 										<p class="card__date">03.06.2002</p>
 									</div>
 									<div class="card__interactive">
@@ -60,27 +51,29 @@
 											<p>Поделиться альбомом</p>
 											<div class="card__social-networks">
 												<a href="">
-													<img src="img/socialsOD.svg" alt="одноклассники" />
+													<img src="../img/socialsOD.svg" alt="одноклассники" />
 												</a>
 												<a href="">
-													<img src="img/socialsVK.svg" alt="вконтакте" />
+													<img src="../img/socialsVK.svg" alt="вконтакте" />
 												</a>
 												<a href="">
-													<img src="img/socialsTG.svg" alt="телеграмм" />
+													<img src="../img/socialsTG.svg" alt="телеграмм" />
 												</a>
 											</div>
 										</div>
-										<a href="" class="card__watch-foto"
-											>Смотреть фото <img src="img/row.svg" alt="стрелка"
+										<a
+											href="../galleryGreenhouses/greenhouses.html"
+											class="card__watch-foto"
+											>Смотреть фото <img src="../img/row.svg" alt="стрелка"
 										/></a>
 									</div>
 								</div>
-								<img src="img/gallery-card/Теплица.png" alt="теплица" />
-							</div>
-							<div class="gallery__card">
+								<img src="imgGallery/Теплица.png" alt="теплица" />
+							</article>
+							<article class="gallery__card">
 								<div class="card__content">
 									<div class="card__info">
-										<p class="card__title">Наши цветы</p>
+										<h4 class="card__title">Наши цветы</h4>
 										<p class="card__date">03.06.2002</p>
 									</div>
 									<div class="card__interactive">
@@ -88,27 +81,27 @@
 											<p>Поделиться альбомом</p>
 											<div class="card__social-networks">
 												<a href="">
-													<img src="img/socialsOD.svg" alt="одноклассники" />
+													<img src="../img/socialsOD.svg" alt="одноклассники" />
 												</a>
 												<a href="">
-													<img src="img/socialsVK.svg" alt="вконтакте" />
+													<img src="../img/socialsVK.svg" alt="вконтакте" />
 												</a>
 												<a href="">
-													<img src="img/socialsTG.svg" alt="телеграмм" />
+													<img src="../img/socialsTG.svg" alt="телеграмм" />
 												</a>
 											</div>
 										</div>
 										<a href="" class="card__watch-foto"
-											>Смотреть фото <img src="img/row.svg" alt="стрелка"
+											>Смотреть фото <img src="../img/row.svg" alt="стрелка"
 										/></a>
 									</div>
 								</div>
-								<img src="img/gallery-card/Цветы.png" alt="цветы" />
-							</div>
-							<div class="gallery__card">
+								<img src="imgGallery/Цветы.png" alt="цветы" />
+							</article>
+							<article class="gallery__card">
 								<div class="card__content">
 									<div class="card__info">
-										<p class="card__title">Картофель</p>
+										<h4 class="card__title">Картофель</h4>
 										<p class="card__date">03.06.2002</p>
 									</div>
 									<div class="card__interactive">
@@ -116,27 +109,27 @@
 											<p>Поделиться альбомом</p>
 											<div class="card__social-networks">
 												<a href="">
-													<img src="img/socialsOD.svg" alt="одноклассники" />
+													<img src="../img/socialsOD.svg" alt="одноклассники" />
 												</a>
 												<a href="">
-													<img src="img/socialsVK.svg" alt="вконтакте" />
+													<img src="../img/socialsVK.svg" alt="вконтакте" />
 												</a>
 												<a href="">
-													<img src="img/socialsTG.svg" alt="телеграмм" />
+													<img src="../img/socialsTG.svg" alt="телеграмм" />
 												</a>
 											</div>
 										</div>
 										<a href="" class="card__watch-foto"
-											>Смотреть фото <img src="img/row.svg" alt="стрелка"
+											>Смотреть фото <img src="../img/row.svg" alt="стрелка"
 										/></a>
 									</div>
 								</div>
-								<img src="img/gallery-card/Картофель.png" alt="Картофель" />
-							</div>
-							<div class="gallery__card">
+								<img src="imgGallery/Картофель.png" alt="Картофель" />
+							</article>
+							<article class="gallery__card">
 								<div class="card__content">
 									<div class="card__info">
-										<p class="card__title">Лук-севок</p>
+										<h4 class="card__title">Лук-севок</h4>
 										<p class="card__date">03.06.2002</p>
 									</div>
 									<div class="card__interactive">
@@ -144,24 +137,24 @@
 											<p>Поделиться альбомом</p>
 											<div class="card__social-networks">
 												<a href="">
-													<img src="img/socialsOD.svg" alt="одноклассники" />
+													<img src="../img/socialsOD.svg" alt="одноклассники" />
 												</a>
 												<a href="">
-													<img src="img/socialsVK.svg" alt="вконтакте" />
+													<img src="../img/socialsVK.svg" alt="вконтакте" />
 												</a>
 												<a href="">
-													<img src="img/socialsTG.svg" alt="телеграмм" />
+													<img src="../img/socialsTG.svg" alt="телеграмм" />
 												</a>
 											</div>
 										</div>
 										<a href="" class="card__watch-foto"
-											>Смотреть фото <img src="img/row.svg" alt="стрелка"
+											>Смотреть фото <img src="../img/row.svg" alt="стрелка"
 										/></a>
 									</div>
 								</div>
-								<img src="img/gallery-card/Лук.png" alt="Лук-севок" />
-							</div>
-						</div>
+								<img src="imgGallery/Лук.png" alt="Лук-севок" />
+							</article>
+						</section>
 					</div>
 				</div>
 			</div>

@@ -6,24 +6,7 @@
 img {
 	object-fit: cover;
 }
-.bread-crumbs {
-	margin-top: 29px;
-	margin-bottom: 25px;
-	font-size: 14px;
-}
-.bread-crumbs a {
-	color: #298d3f;
-	font-weight: 500;
-	text-decoration: none;
-}
-a.bread-crumbs__active {
-	font-weight: 500;
-	text-decoration: none;
-	color: rgb(164, 164, 164);
-}
-.bread-crumbs__slash {
-	color: rgb(164, 164, 164);
-}
+
 h2 {
 	font-size: 40px;
 	font-weight: bold;
@@ -44,6 +27,8 @@ h2 {
 	justify-content: space-between;
 }
 .gallery__card > img {
+	/* max-width: 400px; */
+	width: 50%;
 	border-radius: 25px;
 }
 .card__content {
@@ -54,6 +39,7 @@ h2 {
 	padding: 40px 0 40px 40px;
 }
 .card__info {
+	margin-bottom: 92px;
 }
 .card__title {
 	font-size: 32px;
@@ -98,7 +84,7 @@ h2 {
 @media screen and (max-width: 1580px) {
 	.gallery__card {
 		width: calc(51% - 30px);
-		height: 350px;
+		/* height: 350px; */
 	}
 	.card__content {
 		padding: 30px 10px 30px 30px;
@@ -106,7 +92,7 @@ h2 {
 }
 @media screen and (max-width: 1490px) {
 	.gallery__card > img {
-		width: 320px;
+		width: 50%;
 	}
 	.card__title {
 		font-size: 25px;
@@ -136,11 +122,11 @@ h2 {
 	.gallery__card {
 		/* padding: 20px; */
 		/* flex-direction: column; */
-		height: fit-content;
+		/* height: fit-content; */
 		/* width: calc(51.2% - 30px); */
 	}
 	.card__info {
-		margin-bottom: 15px;
+		margin-bottom: 40px;
 	}
 	.card__content {
 		padding: 30px;
@@ -148,7 +134,7 @@ h2 {
 	}
 	.gallery__card > img {
 		width: 50%;
-		height: 320px;
+		min-height: 320px;
 	}
 	.card__watch-foto {
 		width: 100%;
@@ -164,11 +150,11 @@ h2 {
 	.gallery__card {
 		padding: 0px;
 		flex-direction: row;
-		height: fit-content;
 		width: 100vw;
 	}
 	.gallery__card > img {
-		width: 370px;
+		max-width: 370px;
+		width: 50%;
 	}
 	.card__content {
 		width: fit-content;
@@ -181,5 +167,24 @@ h2 {
 		width: fit-content;
 		padding: 9px 23px;
 		font-size: 16px;
+	}
+}
+@media (max-width: 600px) {
+	.gallery__card {
+		justify-content: stretch;
+		padding: 20px;
+		flex-direction: column-reverse;
+	}
+	.gallery__card > img {
+		max-width: 100%;
+		width: 100%;
+		max-height: 350px;
+		min-height: 300px;
+	}
+	.card__watch-foto img {
+		display: none;
+	}
+	.card__content {
+		padding: 20px 0 0px 0px;
 	}
 }
