@@ -36,6 +36,10 @@ body {
 	-ms-flex: 1 0 auto;
 	flex: 1 0 auto;
 }
+.main-content {
+	padding-top: 30px;
+	padding-bottom: 130px;
+}
 #global100 > * {
 	width: 100%;
 }
