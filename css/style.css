@@ -527,6 +527,11 @@ input:focus {
 	font-size: 16px;
 	font-weight: 600;
 	color: white;
+	border: 1px solid #2aa144;
+	transition: all 0.3s ease 0s;
+}
+.news-up__next-prev button:hover {
+	background: #258039;
 }
 .news-up__next-prev button:nth-child(1) img {
 	margin-left: 11.5px;
@@ -736,6 +741,10 @@ input:focus {
 	display: block;
 	width: 40px;
 	height: 40px;
+	transition: all 0.3s ease;
+}
+.NUE-share__social-network a:hover {
+	filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.6)) contrast(200%);
 }
 .NUE-share__social-network a img {
 	width: 100%;
@@ -758,6 +767,15 @@ input:focus {
 	display: flex;
 	gap: 5px;
 	flex-wrap: wrap;
+	transition: all 0.3s ease;
+}
+.NUE-rate__stars img:not(.NUE-rate__not-active-star):hover {
+	cursor: pointer;
+	filter: drop-shadow(0px 0px 10px yellow);
+}
+.NUE-rate__not-active-star:hover {
+	cursor: pointer;
+	filter: drop-shadow(0px 0px 10px white);
 }
 .NUE-rate__bg {
 }
@@ -794,13 +812,16 @@ input:focus {
 	align-items: center;
 	border-radius: 30px;
 	gap: 18px;
+	transition: 0.3s;
 }
 .NUE-sub__input-wrapp span {
+	overflow: hidden;
 	font-size: 20px;
 	font-weight: 600;
 	color: black;
 	width: fit-content;
 	min-width: 60px;
+	transition: 0.3s;
 }
 .NUE-sub__input-wrapp input {
 	width: 100%;
@@ -809,7 +830,9 @@ input:focus {
 	border: none;
 	border-left: 1px solid black;
 	padding-left: 18px;
+	transition: 0.3s;
 }
+
 .NUE-sub__content button[type="submit"] {
 	background: #f87b11;
 	width: 100%;
@@ -823,11 +846,14 @@ input:focus {
 	padding: 20px;
 	border-radius: 30px;
 	border: none;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+.NUE-sub__content button[type="submit"]:hover {
+	background: #f87b11;
 }
 .NUE-sub__bg {
 	object-fit: cover;
-	/* width: 45%; */
-	/* height: 100%; */
 }
 @media (max-width: 1186px) {
 	.news-up__next-prev {
@@ -1022,5 +1048,17 @@ input:focus {
 	}
 	.NUE-rate__stars img {
 		width: 40px;
+	}
+}
+@media (max-width: 350px) {
+	.NUE-sub__input-wrapp input {
+		font-size: 14px;
+		padding-left: 7px;
+	}
+	.news-up__info {
+		flex-direction: column-reverse;
+	}
+	.news-up__date img {
+		display: none;
 	}
 }
