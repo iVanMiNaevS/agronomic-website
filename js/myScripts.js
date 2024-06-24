@@ -1,3 +1,6 @@
+/////////////////////////////////////////////////////////
+// news
+////////////////////////////////////////////////////////
 // const starsConteiner = document.querySelector(".NUE-rate__stars");
 // const stars = document.querySelectorAll(".NUE-rate__star");
 
@@ -46,9 +49,18 @@
 // 	inputWrapp.style = "";
 // });
 
+/////////////////////////////////////////////////////////
+// catalog
+////////////////////////////////////////////////////////
 const categoriesBt = document.querySelector(".catalog__categories-bt");
 
 categoriesBt.addEventListener("click", () => {
 	document.querySelector(".catalog__categories-list").classList.toggle("active");
 	document.querySelector(".catalog__categories-bt").classList.toggle("active");
 });
+
+// const info = document.querySelector(".info");
+
+// info.addEventListener("click", () => {
+// 	document.querySelector(".PS__modalMob").classList.toggle(".active");
+// });
